@@ -62,7 +62,7 @@ public class Aplicativo {
                         sistemaControle.mostrarAlienigenasUltimos6Meses();
                         break;
                     case 10:
-                        gerarRelatorioEntradas(); // Implemente este método conforme necessário
+                        gerarRelatorioEntradas();
                         break;
                     case 11:
                         rodando = false;
@@ -126,10 +126,10 @@ public class Aplicativo {
             System.out.print("Nível de Periculosidade 1-10: ");
             while (!scanner.hasNextInt()) {
                 System.out.println("Por favor, insira um número válido.");
-                scanner.next(); // Limpa a entrada incorreta
+                scanner.next();
             }
             nivelPericulosidade = scanner.nextInt();
-            scanner.nextLine(); // Limpa o buffer do scanner
+            scanner.nextLine();
             if (nivelPericulosidade < 1 || nivelPericulosidade > 10) {
                 System.out.println("O nível de periculosidade deve estar entre 1 e 10.");
             }

@@ -14,7 +14,6 @@ public class Alienigena {
         this.id = id;
         this.nome = nome;
         this.especie = especie;
-//        this.nivelPericulosidade = nivelPericulosidade;
         this.dataHoraEntrada = dataHoraEntrada;
         this.emQuarentena = emQuarentena;
     }
